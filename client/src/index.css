@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+}
+
+/* Custom gradients for different weather conditions */
+.bg-clear-day {
+  @apply bg-gradient-to-b from-[#4CB8FF] to-[#2D9CDB];
+}
+
+.bg-night {
+  @apply bg-gradient-to-b from-[#172A46] to-[#0F1C2E];
+}
+
+.bg-cloudy {
+  @apply bg-gradient-to-b from-[#B8C5D6] to-[#8B9BAD];
+}
+
+.bg-rainy {
+  @apply bg-gradient-to-b from-[#626E7A] to-[#3C4855];
+}
+
+.bg-snow {
+  @apply bg-gradient-to-b from-[#BDC6CF] to-[#98A7B5];
+}
+
+.bg-thunderstorm {
+  @apply bg-gradient-to-b from-[#424B59] to-[#2C3240];
+}
+
+.bg-dust {
+  @apply bg-gradient-to-b from-[#D4C6AB] to-[#B5A68C];
+}
+
+.bg-fog {
+  @apply bg-gradient-to-b from-[#C4C9D0] to-[#A5A9AF];
+}
+
+/* Custom animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes pulse-subtle {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.8; }
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 4s ease-in-out infinite;
+}
+
+/* Custom scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  height: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+
+/* Glass panel styles */
+.glass-panel {
+  @apply backdrop-blur-md bg-white/10 border-t border-white/20;
+}

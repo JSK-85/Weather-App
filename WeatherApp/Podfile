@@ -1,0 +1,12 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '14.0'
+
+target 'WeatherApp' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for WeatherApp
+  pod 'Kingfisher', '~> 7.0'  # For image loading and caching
+  pod 'SkeletonView', '~> 1.8'  # For loading skeletons
+  pod 'Lottie', '~> 4.0'  # For animations
+end
