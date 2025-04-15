@@ -24,8 +24,8 @@ enum WeatherServiceError: Error {
 
 // MARK: - Weather Service
 class WeatherService {
-    // OpenWeatherMap API key - this should be stored securely
-    private let apiKey = "YOUR_OPENWEATHER_API_KEY"
+    // OpenWeatherMap API key from Config
+    private let apiKey = Config.openWeatherAPIKey
     private let baseURL = "https://api.openweathermap.org"
     
     // MARK: - Weather Data Methods

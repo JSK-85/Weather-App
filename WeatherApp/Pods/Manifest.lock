@@ -1,0 +1,24 @@
+PODS:
+  - Kingfisher (7.12.0)
+  - lottie-ios (4.4.3)
+  - SkeletonView (1.30.4)
+
+DEPENDENCIES:
+  - Kingfisher (~> 7.0)
+  - lottie-ios (~> 4.4.0)
+  - SkeletonView (~> 1.8)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Kingfisher
+    - lottie-ios
+    - SkeletonView
+
+SPEC CHECKSUMS:
+  Kingfisher: 53a10ea35051a436b5fb626ca2dd8f3144d755e9
+  lottie-ios: fcb5e73e17ba4c983140b7d21095c834b3087418
+  SkeletonView: 5a050f6411e697abd4cda0a8d767013399dccd69
+
+PODFILE CHECKSUM: 64aa5e6eee13ab08680454a2543f2cae1b13f356
+
+COCOAPODS: 1.16.2

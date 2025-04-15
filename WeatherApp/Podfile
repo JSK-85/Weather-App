@@ -1,6 +1,8 @@
 # Uncomment the next line to define a global platform for your project
 platform :ios, '14.0'
 
+source 'https://github.com/CocoaPods/Specs.git'
+
 target 'WeatherApp' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
@@ -8,5 +10,5 @@ target 'WeatherApp' do
   # Pods for WeatherApp
   pod 'Kingfisher', '~> 7.0'  # For image loading and caching
   pod 'SkeletonView', '~> 1.8'  # For loading skeletons
-  pod 'Lottie', '~> 4.0'  # For animations
+  pod 'lottie-ios', '~> 4.4.0'  # For animations
 end
